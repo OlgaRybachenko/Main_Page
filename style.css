@@ -112,6 +112,19 @@ body {
 .main_center-one {
   width: 110px;
 }
+/* .main_center img {
+  position: relative;
+  animation: move 2s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {
+    top: 0;
+  }
+  to {
+    top: 20px;
+  }
+} */
 .main_right {
   margin-left: 65px;
 }
@@ -121,18 +134,79 @@ body {
   line-height: 40px;
   text-align: center;
   margin-bottom: 24px;
+} 
+.main_right-item::-webkit-scrollbar { 
+  width: 8px; 
+  /* display: flex;
+width: 8px;
+height: 403px;
+flex-direction: column;
+align-items: center;
+flex-shrink: 0;
+border-radius: 4px; */
+
+  /* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+flex: 1 0 0;
+align-self: stretch;
+width: 8px;
+height: 403px; ширина полосы прокрутки */
+} 
+
+.main_right-item::-webkit-scrollbar-track {
+  border-radius: 10px;
+background: rgba(255, 255, 255, 0.12); 
+border-top: 50px solid none;
+  /* width: 8px;
+height: 403px;
+padding-right: 16px;
+flex-shrink: 0;
+;
+
+  /* background: #FFFFFF; цвет фона полосы прокрутки */
+ }
+
+.main_right-item::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+background: #478BF9;
+
+  /* width: 8px;
+height: 104px;
+flex-shrink: 0;
+ */
+
+
+  /* background-color: #478BF9; цвет полосы прокрутки */
+  /* border-radius: 10px; скругление углов полосы прокрутки */
+} 
+.main_right-info {
+  padding: 20px;
+  align-self: stretch;
+  border-radius: 100px;
+  border: 3px solid #478BF9;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
 }
 .main_right-item {
-max-height: 595px;
-align-self: stretch;
-border-radius: 100px;
-border: 3px solid var(--main-blue-478-bf-9, #478BF9);
-background: var(--transp-white-white-12, rgba(255, 255, 255, 0.12));
-backdrop-filter: blur(10px);
-margin-left: 65px;
-padding: 0 40px 0 24px;
-overflow-y: scroll;
+  
+width: 467px;
+height: 595px;
+overflow-y: auto;
+max-height: 80%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+padding: 10px;
+
 }
+
+
+  
+
+
 .main_right-list {
   list-style-type: none;
   display: flex;
@@ -140,13 +214,17 @@ padding: 16px 64px;
 flex-direction: column;
 align-items: flex-start;
 align-self: stretch;
-margin-top: 16px;
+ margin-top: 16px;
 border-radius: 196px;
-background: #478BF9;
+background: #1E1231;
+}
+.main_right-list:hover {
+  background: #478BF9;
 }
 .main_right-list a {
   text-decoration: none;
   color: #fff;
+  margin-bottom: 14px;
 }
 .main_right-p {
   font-feature-settings: 'liga' off;
@@ -223,6 +301,10 @@ align-self: stretch;
   height: 32px;
   flex-shrink: 0;
   border: none;
+  cursor: pointer;
+}
+.social_button:hover {
+  background: url(img-Page/BG\ Vector2.png);
 }
 .social_button img {
   text-align: center;
