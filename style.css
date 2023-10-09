@@ -167,11 +167,11 @@ a {
 
 .main_right-item::-webkit-scrollbar-track {
   border-radius: 10px;
-background: rgba(255, 255, 255, 0.12);          /*не смогла уменьшить высоту скрола*/
+  background: rgba(255, 255, 255, 0.12);          /*не смогла уменьшить высоту скрола*/
  }
 .main_right-item::-webkit-scrollbar-thumb {
   border-radius: 10px;
-background: #478BF9;
+  background: #478BF9;
 } 
 .main_right-info {
   padding: 20px 40px 20px 20px;
@@ -182,27 +182,27 @@ background: #478BF9;
   backdrop-filter: blur(10px);
 }
 .main_right-item {
-width: 467px;
-height: 550px;
-overflow-y: auto;
-max-height: 80%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-position: relative;
-gap: 16px;
-padding: 10px;
+  width: 467px;
+  height: 550px;
+  overflow-y: auto;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  gap: 16px;
+  padding: 10px;
 }
 .main_right-list {
   list-style-type: none;
   display: flex;
-padding: 16px 64px;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
- margin-top: 16px;
-border-radius: 196px;
-background: #1E1231;
+  padding: 16px 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-top: 16px;
+  border-radius: 196px;
+  background: #1E1231;
 }
 .main_right-list:hover {
   background: #478BF9;
@@ -213,47 +213,47 @@ background: #1E1231;
 .main_right-p {
   font-feature-settings: 'liga' off;
   color: rgba(255, 255, 255, 0.60);
-font-family: "Futura PT", sans-serif;
-font-size: 14px;
-font-style: normal;
-font-weight: 450;
-line-height: 16px;
+  font-family: "Futura PT", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 16px;
 }
 .dotLight img{
   width: 226.458px;
-height: 1302.469px;
-transform: rotate(-54.311deg);
-flex-shrink: 0;
-background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
-opacity: 0.55;
-filter: blur(150px);
-position: absolute;
-left: 100px;
-z-index: 100;
-bottom: 50px;
+  height: 1302.469px;
+  transform: rotate(-54.311deg);
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
+  opacity: 0.55;
+  filter: blur(150px);
+  position: absolute;
+  left: 100px;
+  z-index: 100;
+  bottom: 50px;
 }
 .dotLight2 img {
   width: 424px;
-height: 574px;
-flex-shrink: 0;                         /*пришлось уменьшить ширину, т.к overflow:height не срабатывает*/
-border-radius: 574px;
- opacity: 0.7;
- background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
-filter: blur(325px);
-position: absolute;
-right: 0;
-bottom: 0;
-overflow: hidden;
+  height: 574px;
+  flex-shrink: 0;                         /*пришлось уменьшить ширину, т.к overflow:height не срабатывает*/
+  border-radius: 574px;
+  opacity: 0.7;
+  background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+  filter: blur(325px);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 .maskArea img {
   width: 1920px;
-height: 1048px;        /*не соответствует заявленному, если наложить наверх, ничего не видно, поэтому z-индекс -1*/
-flex-shrink: 0;
-background: linear-gradient(180deg, #FFF 63.64%, rgba(255, 255, 255, 0.00) 95.45%);
-position: absolute;
-z-index: -1;
-left: 0;
-top: 52px;
+  height: 1048px;        /*не соответствует заявленному, если наложить наверх, ничего не видно, поэтому z-индекс -1*/
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #FFF 63.64%, rgba(255, 255, 255, 0.00) 95.45%);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 52px;
 }
 .footer {
   display: flex;
@@ -271,9 +271,9 @@ top: 52px;
 } 
 .footer_container {
   display: flex;
-justify-content: space-between;
-align-items: flex-end;
-align-self: stretch;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
 } 
 .footer_info {
   display: flex;
