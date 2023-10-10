@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('Fonts/futura-pt-demi.ttf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +20,6 @@ button,
 a {
   cursor: pointer;
 }
-
 .page {
   width: 1920px;
   height: 1265;
@@ -39,12 +42,16 @@ a {
   width: 287px;
   height: 32px;
 }
+.mobile {
+  display: none;
+}
 .header_burger {
   display: none;
 } 
 .header_menu {
   display: flex;
-}  .menu_item {
+}  
+.menu_item {
   display: flex; 
   justify-content: flex-start;
   padding: 8px;
@@ -82,6 +89,10 @@ a {
   height: 16px;
   padding: 3px 3px 0 0;
 }
+/* .main {
+  display: flex;
+  flex-wrap: wrap;
+} */
 .main_title {
   font-size: 96px;
   font-weight: 500;
@@ -169,7 +180,6 @@ a {
 /* .main_right-item::-webkit-scrollbar { 
   width: 8px; 
 } 
-
 .main_right-item::-webkit-scrollbar-track {
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.12);          /*не смогла уменьшить высоту скрола*/
@@ -247,6 +257,7 @@ a {
 .dotLight img{
   width: 226.458px;
   height: 1302.469px;
+  overflow: hidden;
   transform: rotate(-54.311deg);
   flex-shrink: 0;
   background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
@@ -254,7 +265,6 @@ a {
   filter: blur(150px);
   position: absolute;
   left: 100px;
-  z-index: 100;
   bottom: 50px;
 }
 .dotLight2 img {
@@ -262,6 +272,7 @@ a {
   height: 574px;
   flex-shrink: 0;                         /*пришлось уменьшить ширину, т.к overflow:height не срабатывает*/
   border-radius: 574px;
+  overflow: hidden;
   opacity: 0.7;
   background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
   filter: blur(325px);
@@ -270,16 +281,16 @@ a {
   bottom: 0;
   overflow: hidden;
 }
-.maskArea img {
+/* .maskArea img {
   width: 1920px;
   height: 1048px;        /*не соответствует заявленному, если наложить наверх, ничего не видно, поэтому z-индекс -1*/
-  flex-shrink: 0;
+  /* flex-shrink: 0;
   background: linear-gradient(180deg, #FFF 63.64%, rgba(255, 255, 255, 0.00) 95.45%);
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   left: 0;
   top: 52px;
-}
+}  */
 .footer {
   display: flex;
   padding: 40px 140px 24px 140px;

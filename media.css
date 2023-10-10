@@ -1,15 +1,30 @@
 @media(max-width:767px) {
-  /* .header {
-    position: fixed;
-    width: 100%;
+.header_menu {
+  display: none;
+}
+}
+  /*.header {
+     /* position: fixed; */
+    /*width: 100%;
     top: 0;
-    left: 0;
-    z-index: 2;
-  } */
+    left: 0;*/
+    /*z-index: 5;
+    /* display: flex; */
+/*width: 100%;
+height: 50px;
+padding: 10px 14px;
+/* justify-content: space-between;
+align-items: center; */
+/*border-radius: 64px;
+border: 2px solid #478BF9;
+background: #110A1D;
+
+  }
   .container {
     padding: 10px 10px 0 10px;
   }
-  .header::before {
+
+  /* .header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -18,8 +33,8 @@
     height: 100%;
     background: #1e1231;
     z-index: 3;
-  }
-  .header_logo {
+  } */
+  /*.header_logo {
     width: 54px;
     height: 18px;
     overflow: hidden;
@@ -35,11 +50,55 @@
     background: #1e1231;
     z-index: 3;
     padding: 100px 10px 10px 20px;
+    flex-direction: column;
   }
-  .menu_item {
+  /* .menu_item {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .menu_list {
+    display: flex;
+width: 100%;
+padding: 13px 20px;
+align-items: center;
+gap: 8px;
+border-radius: 28px;
+border: 2px solid #478BF9;
+background: var #110A1D;
+font-family: Lexend;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+  }
+
+  .menu_button-btn:not(:first-child) {
     display: block;
+    display: flex;
+width: 100%;
+padding: 13px 20px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 24px;
+border: 2px solid var(--additional-purple-9-dadf-2, #9DADF2);
+background: var(--main-deep-blue-1-e-1231, #1E1231);
+text-align: center;
+font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; 
+  } 
+  .menu_button-btn:first-child {
+    display: none;
+  }*/
+  /*.mobile {
+    display: block;
+    position: relative;
+    z-index: 5;
+    right: 0;
   }
-  
 
   .header_burger {
     display: block;
@@ -70,13 +129,261 @@
   }
   .header_burger::after {
     bottom: 0;
-  }
-}
+  }*/
 
-@media (max-width:720px) {
+
+@media (max-width:320px) {
   .page {
-    min-width: 320px;
-    height: 1438;
+    width: 320px;
+    height: 2000px;
 }
+.container {
+  padding: 10px 10px 0 10px;
+}
+.header {
+  display: flex;
+width: 100%;
+padding: 10px 14px;
+justify-content: space-between;
+align-items: center;
+border-radius: 64px;
+border: 2px solid #478BF9;
+background: #110A1D;
+margin-bottom: 70px;
+}
+.header_logo {
+  width: 54px;
+  height: 18px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.mobile {
+  display: block;
+  position: relative;
+  z-index: 5;
+  right: 0;
+}
+.menu_list {
+  width: 300px;
+}
+.menu_button-btn:not(:first-child) {
+  width: 300px;
+}
+table {
+  display: block;
+}
+/* .main_left,
+.main_center,
+.main_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+} */
+.main {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: inline-flex;
+padding: 70px 10px;
+flex-direction: column;
+align-items: flex-start;
+gap: 230px;
 
 }
+ .main_left {
+  /* display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px; */
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 12px;
+}
+.main_title {
+  text-align: center;
+font-size: 46px;
+line-height: 50px;
+}
+.main_article {
+  text-align: center;
+font-size: 20px;
+line-height: 26px; 
+}
+.main_button {
+  display: flex;
+width: 300px;
+padding: 15px 20px;
+justify-content: center;
+align-items: center;
+}
+.main_center {
+  /* display: block;
+  width: 100%; */
+  display: inline-block;
+  padding: 70px 10px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+  /* transform: rotate(90deg); */
+}
+.main_center-banner {
+  width: 165px;
+max-height: 659.512px;
+transform: rotate(-90deg);
+position: absolute;
+left: 0;
+/* right: -172.512px; */
+top: 343px;
+overflow: hidden;
+}
+.main_center-one img,
+.main_center-two img,
+.main_center-three img{
+  width: 49px;
+  
+}
+
+/* .main_center-one img:nth-child(1) {
+  content: url('./img-Page/Soccer4m.png');
+}.main_center-one img:nth-child(6) {
+  content: url('path/to/new/image2.jpg');
+} */ */
+.main_right {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+} 
+}
+
+
+
+/* .main_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_center td {
+  margin: 0;
+}
+
+.main_right {
+  margin-left: 0;
+  margin-top: 0;
+}
+} */
+/* .main_left, .main_center, .main_right {
+  width: 100%; /* Занимают всю доступную ширину */
+/* }
+
+.main_center {
+  flex-direction: column; /* Элементы внутри main_center располагаются вертикально */
+  /* align-items: center;
+}
+
+.main_center td {
+  margin: 0; /* Удаляем отступы между элементами в main_center */
+/* }
+
+.main_right {
+  margin-left: 0; /* Убираем левый отступ */
+  /* margin-top: 0; Убираем верхний отступ */
+/* }
+
+.main_right-item {
+  width: 100%; /* Занимают всю доступную ширину */
+  /* max-height: none; Убираем ограничение по высоте */
+/* }
+
+.simplebar-track.simplebar-vertical {
+  display: none; /* Скрываем вертикальный скроллбар */
+/* } 
+
+.main_right-list { */
+  /* border-radius: 0; Убираем скругление границ элемента */ 
+
+/* .main_right-list { */ 
+  /* border-radius: 0; Убираем скругление границ элемента */ 
+/* }  */
+/* } */ 
+/* .main { */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
+  /* height: 100vh; Настройте высоту в зависимости от ваших потребностей */
+/* } */
+
+/* .main_left, .main_center, .main_right {
+  margin: 20px; /* Регулируйте отступы в зависимости от ваших потребностей */
+/* }
+
+.main_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_center td {
+  margin: 10px; /* Регулируйте отступы в зависимости от ваших потребностей */
+/* }
+
+.main_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1; /* Просто для наглядности */
+  /* padding: 20px; Регулируйте отступы в зависимости от ваших потребностей */
+/* }  */ 
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+td {
+  width: 100%;
+} */
+/* .main {
+  display: block;
+} */
+
+/* .main_center {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_center td {
+  width: 100%; */
+/* } */
+/* .main {
+  display: block;
+ 
+}
+.main_left {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.main_button {
+  margin: 0 auto;
+}
+.main_center {
+  width: 100%;
+} */
+/* .main_center-one img:nth-child(1) {
+  content: url('path/to/new/image1.jpg');
+}
+.main_center-one img:nth-child(2) {
+  content: url('path/to/new/image2.jpg');*/
