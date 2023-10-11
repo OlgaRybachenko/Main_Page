@@ -170,9 +170,6 @@ margin-bottom: 70px;
 .menu_button-btn:not(:first-child) {
   width: 300px;
 }
-table {
-  display: block;
-}
 /* .main_left,
 .main_center,
 .main_right {
@@ -189,7 +186,7 @@ table {
 padding: 70px 10px;
 flex-direction: column;
 align-items: flex-start;
-gap: 230px;
+gap: 24px;
 
 }
  .main_left {
@@ -238,6 +235,7 @@ left: 0;
 /* right: -172.512px; */
 top: 343px;
 overflow: hidden;
+margin-bottom: 38px;
 }
 .main_center-one img,
 .main_center-two img,
@@ -245,145 +243,56 @@ overflow: hidden;
   width: 49px;
   
 }
-
-/* .main_center-one img:nth-child(1) {
-  content: url('./img-Page/Soccer4m.png');
-}.main_center-one img:nth-child(6) {
-  content: url('path/to/new/image2.jpg');
-} */ */
+.main_right-block {
+  display: inline-flex;
+padding: 70px 10px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+margin-left: 0;
+/* position: absolute;
+left: 0;
+/* margin-left: 0; */
+/* bottom: 100px; */
+}
 .main_right {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
-
+flex-direction: column;
+align-items: center;
+gap: 18px;
+}
+.main_right-title {
+  font-size: 32px;
+font-weight: 600;
 } 
+.main_right-info {
+  /* width: 300px;
+height: 421px; */
+border-radius: 50px;
+border: 2px solid #478BF9;
+background-color: rgba(255, 255, 255, 0.12);
+backdrop-filter: blur(10px);
+padding: 10px;
 }
-
-
-
-/* .main_center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main_center td {
-  margin: 0;
-}
-
-.main_right {
-  margin-left: 0;
-  margin-top: 0;
-}
-} */
-/* .main_left, .main_center, .main_right {
-  width: 100%; /* Занимают всю доступную ширину */
-/* }
-
-.main_center {
-  flex-direction: column; /* Элементы внутри main_center располагаются вертикально */
-  /* align-items: center;
-}
-
-.main_center td {
-  margin: 0; /* Удаляем отступы между элементами в main_center */
-/* }
-
-.main_right {
-  margin-left: 0; /* Убираем левый отступ */
-  /* margin-top: 0; Убираем верхний отступ */
-/* }
-
 .main_right-item {
-  width: 100%; /* Занимают всю доступную ширину */
-  /* max-height: none; Убираем ограничение по высоте */
-/* }
-
-.simplebar-track.simplebar-vertical {
-  display: none; /* Скрываем вертикальный скроллбар */
-/* } 
-
-.main_right-list { */
-  /* border-radius: 0; Убираем скругление границ элемента */ 
-
-/* .main_right-list { */ 
-  /* border-radius: 0; Убираем скругление границ элемента */ 
-/* }  */
-/* } */ 
-/* .main { */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
-  /* height: 100vh; Настройте высоту в зависимости от ваших потребностей */
-/* } */
-
-/* .main_left, .main_center, .main_right {
-  margin: 20px; /* Регулируйте отступы в зависимости от ваших потребностей */
-/* }
-
-.main_center {
+  width: 250px;
+  height: 380px;
+  border-radius: 50px;
+  max-height: 80%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+padding: 5px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+gap: 10px;
+/* bght: auto; */
 }
-
-.main_center td {
-  margin: 10px; /* Регулируйте отступы в зависимости от ваших потребностей */
-/* }
-
-.main_right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f1; /* Просто для наглядности */
-  /* padding: 20px; Регулируйте отступы в зависимости от ваших потребностей */
-/* }  */ 
-
-/* .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.main_right-list {
+padding: 15px 35px;
+border-radius: 40px;
+font-size: 16px;
+line-height: 20px;
+background: #1E1231;
+border-radius: 40px;
 }
-
-table {
-  width: 100%;
-  margin-top: 20px;
 }
-
-td {
-  width: 100%;
-} */
-/* .main {
-  display: block;
-} */
-
-/* .main_center {
-  display: flex;
-  flex-direction: column;
-}
-
-.main_center td {
-  width: 100%; */
-/* } */
-/* .main {
-  display: block;
- 
-}
-.main_left {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 32px;
-}
-.main_button {
-  margin: 0 auto;
-}
-.main_center {
-  width: 100%;
-} */
-/* .main_center-one img:nth-child(1) {
-  content: url('path/to/new/image1.jpg');
-}
-.main_center-one img:nth-child(2) {
-  content: url('path/to/new/image2.jpg');*/
